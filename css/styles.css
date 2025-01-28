@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  font-family: "Work Sans", serif;
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(--light-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 2em;
+}
+
+.card {
+  padding: 1.5em;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+/* CARD HEADER */
+.card-header {
+  display: flex;
+  gap: 1.7em;
+  margin-bottom: 2em;
+}
+
+.card-header img {
+  width: 10%;
+}
+
+.card-header h1 {
+  color: var(--dark-purple);
+}
+
+/* Questions and Answers */
+details {
+  border-bottom: 1px solid var(--light-pink);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5em;
+  gap: 0.5em;
+  list-style: none;
+  color: var(--dark-purple);
+}
+
+details p {
+  color: var(--grayish-purple);
+  line-height: 1.5em;
+  margin-top: 0.2em;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+
+  .card {
+    max-width: 500px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
