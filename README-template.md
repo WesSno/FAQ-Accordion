@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FAQ Accordion](https://github.com/WesSno/FAQ-Accordion)
+- Live Site URL: [FAQ Accordion](https://kkwatia-faq-accordion.netlify.app/)
 
 ## My process
 
